@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI Memo - AI 기반 메모 애플리케이션
 
-## Getting Started
+AI Memo는 Next.js와 TypeScript를 기반으로 한 현대적인 메모 작성 및 관리 애플리케이션입니다.
 
-First, run the development server:
+## 🚀 기술 스택
 
+- **Framework**: Next.js 15.4.4 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Development Tools**: Taskmaster AI
+- **Package Manager**: npm
+
+## 📋 주요 기능
+
+- 📝 메모 작성 및 편집
+- 🏷️ 카테고리별 메모 분류
+- 🔍 메모 검색 기능
+- 💾 자동 저장
+- 📱 반응형 디자인
+
+## 🛠️ 개발 환경 설정
+
+### 필수 요구사항
+
+- Node.js 18.0.0 이상
+- npm 9.0.0 이상
+
+### 설치 및 실행
+
+1. 저장소 클론
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/iyoon/ai-memo.git
+cd ai-memo
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. 의존성 설치
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. 개발 서버 실행
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. 브라우저에서 [http://localhost:3000](http://localhost:3000) 접속
 
-## Learn More
+## 📁 프로젝트 구조
 
-To learn more about Next.js, take a look at the following resources:
+```
+ai-memo/
+├── src/
+│   └── app/           # Next.js App Router
+│       ├── layout.tsx # 루트 레이아웃
+│       └── page.tsx   # 메인 페이지
+├── public/            # 정적 파일
+├── .taskmaster/       # Taskmaster AI 설정
+└── package.json       # 프로젝트 설정
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🧪 개발 도구
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Taskmaster AI
+이 프로젝트는 Taskmaster AI를 사용하여 개발 워크플로우를 관리합니다.
 
-## Deploy on Vercel
+```bash
+# Taskmaster 명령어
+npx task-master-ai list    # 작업 목록 확인
+npx task-master-ai next    # 다음 작업 확인
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📝 스크립트
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `npm run dev` - 개발 서버 실행
+- `npm run build` - 프로덕션 빌드
+- `npm run start` - 프로덕션 서버 실행
+- `npm run lint` - 코드 린팅
+
+## 🤝 기여하기
+
+1. 이슈 생성 또는 기존 이슈 확인
+2. `feature/issue-number` 형식으로 브랜치 생성
+3. 코드 작성 및 테스트
+4. Pull Request 생성
+
+## 📄 라이선스
+
+이 프로젝트는 MIT 라이선스 하에 배포됩니다.
+
+## 🔗 링크
+
+- [GitHub Repository](https://github.com/iyoon/ai-memo)
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
